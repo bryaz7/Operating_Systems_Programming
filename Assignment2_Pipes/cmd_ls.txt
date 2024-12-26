@@ -1,0 +1,7 @@
+./osh -t < testscripts/6.singlePipe.txt > & tmp; diff tmp testscripts/ea6.txt ;
+./osh -t < testscripts/7.malformed.txt > & tmp; diff tmp testscripts/ea7.txt ;
+./osh -t < testscripts/8.morePipes.txt > & tmp; diff tmp testscripts/ea8.txt ;
+./osh -t < testscripts/9.simplePipeAndLogical.txt > & tmp; diff tmp testscripts/ea9.txt ;
+
+> & tmp
+> tmp 2>&1

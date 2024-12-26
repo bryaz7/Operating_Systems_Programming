@@ -1,0 +1,5 @@
+./osh -t < testscripts/5.moreLogical.txt > tmp 2>&1; diff tmp testscripts/ea5.txt ;
+./osh -t < testscripts/4.logicalConditional.txt > tmp 2>&1; diff tmp testscripts/ea4.txt ;
+./osh -t < testscripts/3.moreRedir.txt > tmp 2>&1; diff tmp testscripts/ea3.txt ;
+./osh -t < testscripts/2.simpleRedir.txt > tmp 2>&1; diff tmp testscripts/ea2.txt ;
+./osh -t < testscripts/1.singleCommand.txt > tmp 2>&1; diff tmp testscripts/ea1.txt ;
